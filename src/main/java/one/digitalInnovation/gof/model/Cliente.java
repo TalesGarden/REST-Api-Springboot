@@ -13,6 +13,7 @@ public class Cliente {
     @ManyToOne
     private Endereco endereco;
 
+
     public Long getId() {
         return id;
     }
@@ -36,4 +37,5 @@ public class Cliente {
     public void setEndereco(Endereco endereco) {
         this.endereco = endereco;
     }
+
 }

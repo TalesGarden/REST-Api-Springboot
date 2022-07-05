@@ -41,7 +41,8 @@ public class EscolaServiceImpl implements EscolaService {
 
     @Override
     public Escola buscarPorId(Long id) {
-        return (Escola) escolaRepository.findAllById(Collections.singleton(id));
+        Optional<Escola> escola =  escolaRepository.findById(id);
+        return escola.get();
     }
 
     @Override

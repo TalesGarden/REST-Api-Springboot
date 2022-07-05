@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.*;
 
 
 @RestController
-@RequestMapping("clientes")
+@RequestMapping("alunos")
 public class ClienteRestController {
 
     @Autowired
